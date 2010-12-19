@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--
   A Dvorak layout for Norwegian keyboards,
   (c)2008 Vidar Bronken Gundersen
+  http://github.com/vibrog/no-dvorak
   Reuse and copying allowed when attribution given.
-
-Installation
-
-  On Mac OS X 10.2 or later, install by placing this file in:
-  "/Library/Keyboard Layouts/". It will appear in the keyboard
-  layouts selection as NorwegianDvorak. You may need to restart
-  applications for the change to take effect.
-
-Resources
-
-  Keyboard layout editor Ukelele http://scripts.sil.org/ukelele
-  A layout template generator http://wordherd.com/keyboards/
-  Norwegian Dvorak page http://www.stenling.no/dvorak/
-
 -->
-<!--Last edited by Ukelele version 1.8 on 2008-08-03 at 23:44 (CEST)-->
+<!--Last edited by Ukelele version 2.1.4 on 2010-12-19 at 23:35 (GMT+01:00)-->
 <keyboard group="0" id="6951" name="Norwegian Dvorak" maxout="3">
     <layouts>
         <layout first="0" last="0" modifiers="commonModifiers" mapSet="ANSI"/>
@@ -27,7 +14,7 @@ Resources
     <modifierMap id="commonModifiers" defaultIndex="7">
         <keyMapSelect mapIndex="0">
             <modifier keys=""/>
-            <modifier keys="command anyShift? caps?"/>
+            <modifier keys="anyShift? caps? command"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="1">
             <modifier keys="anyShift caps?"/>
@@ -39,18 +26,18 @@ Resources
             <modifier keys="anyOption"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="4">
-            <modifier keys="anyShift anyOption command? caps?"/>
+            <modifier keys="anyShift caps? anyOption command?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="5">
-            <modifier keys="anyOption caps"/>
+            <modifier keys="caps anyOption"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="6">
-            <modifier keys="command anyOption caps?"/>
+            <modifier keys="caps? anyOption command"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="7">
-            <modifier keys="control command? shift? caps? option?"/>
-            <modifier keys="control command? shift? caps? option? rightShift"/>
-            <modifier keys="control command? shift? caps? option? rightOption"/>
+            <modifier keys="shift? caps? option? command? control"/>
+            <modifier keys="shift? rightShift caps? option? command? control"/>
+            <modifier keys="shift? caps? option? rightOption command? control"/>
         </keyMapSelect>
     </modifierMap>
     <keyMapSet id="ANSI">
@@ -66,7 +53,7 @@ Resources
             <key code="7" action="q"/>
             <key code="8" action="j"/>
             <key code="9" action="k"/>
-            <key code="10" output="'"/>
+            <key code="10" output="&#x0027;"/>
             <!-- apostrophe -->
             <key code="11" action="x"/>
             <key code="12" action="å"/>
@@ -90,11 +77,11 @@ Resources
             <key code="30" action="diaeresis"/>
             <key code="31" action="r"/>
             <key code="32" action="g"/>
-            <key code="33" output="&#x003c;"/>
+            <key code="33" output="&#x003C;"/>
             <!-- less-than sign -->
             <key code="34" action="c"/>
             <key code="35" action="l"/>
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <!-- carriage return -->
             <key code="37" action="n"/>
             <key code="38" action="h"/>
@@ -116,23 +103,23 @@ Resources
             <!-- backspace -->
             <key code="52" output="&#x0003;"/>
             <!-- end of text -->
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- escape -->
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output=","/>
             <!-- decimal separator on numeric keypad -->
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -170,17 +157,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="1">
@@ -222,10 +209,10 @@ Resources
             <key code="30" action="circumflex"/>
             <key code="31" action="R"/>
             <key code="32" action="G"/>
-            <key code="33" output=">"/>
+            <key code="33" output="&#x003E;"/>
             <key code="34" action="C"/>
             <key code="35" action="L"/>
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <!-- carriage return -->
             <key code="37" action="N"/>
             <key code="38" action="H"/>
@@ -245,7 +232,7 @@ Resources
             <key code="50" action="Ø"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output="."/>
@@ -255,7 +242,7 @@ Resources
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <key code="71" output="&#x001b;"/>
+            <key code="71" output="&#x001B;"/>
             <key code="72" output="="/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
@@ -298,17 +285,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="2">
@@ -323,7 +310,7 @@ Resources
             <key code="7" action="Q"/>
             <key code="8" action="J"/>
             <key code="9" action="K"/>
-            <key code="10" output="'"/>
+            <key code="10" output="&#x0027;"/>
             <!-- apostrophe -->
             <key code="11" action="X"/>
             <key code="12" action="Å"/>
@@ -347,11 +334,11 @@ Resources
             <key code="30" action="diaeresis"/>
             <key code="31" action="R"/>
             <key code="32" action="G"/>
-            <key code="33" output="&#x003c;"/>
+            <key code="33" output="&#x003C;"/>
             <!-- less-than sign -->
             <key code="34" action="C"/>
             <key code="35" action="L"/>
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <key code="37" action="N"/>
             <key code="38" action="H"/>
             <key code="39" output="-"/>
@@ -368,22 +355,22 @@ Resources
             <key code="50" action="Ø"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output=","/>
             <!-- decimal separator for numeric keypad -->
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -421,17 +408,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="3">
@@ -449,7 +436,7 @@ Resources
             <!-- bullet -->
             <key code="8" output="√"/>
             <key code="9" output="ª"/>
-            <key code="10" output="'"/>
+            <key code="10" output="&#x0027;"/>
             <!-- apostrophe -->
             <key code="11" output="‹"/>
             <key code="12" action="ringabove"/>
@@ -471,7 +458,7 @@ Resources
             <key code="22" output="§"/>
             <!-- section sign -->
             <key code="23" output="∞"/>
-            <key code="24" output="&#x0301;"/>
+            <key code="24" output="́"/>
             <key code="25" output="]"/>
             <key code="26" output="|"/>
             <!-- vertical bar -->
@@ -485,7 +472,7 @@ Resources
             <key code="33" output="≤"/>
             <key code="34" output="ç"/>
             <key code="35" output="ﬁ"/>
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <key code="37" output="ñ"/>
             <key code="38" output=""/>
             <key code="39" output="–"/>
@@ -493,7 +480,7 @@ Resources
             <!-- thorn -->
             <key code="41" output="ß"/>
             <!-- sharp s -->
-            <key code="42" output="'"/>
+            <key code="42" output="&#x0027;"/>
             <key code="43" output="’"/>
             <key code="44" output="÷"/>
             <key code="45" output="›"/>
@@ -504,22 +491,22 @@ Resources
             <key code="50" output="ö"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output=","/>
             <!-- decimal separator on numeric keypad -->
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -557,17 +544,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="4">
@@ -595,7 +582,7 @@ Resources
             <!-- section -->
             <key code="11" output="«"/>
             <!-- combining macronbelow -->
-            <key code="12" output="&#x030a;"/>
+            <key code="12" output="̊"/>
             <!-- combining ringabove -->
             <key code="13" output="„"/>
             <!-- double low-9 quotation mark -->
@@ -619,7 +606,7 @@ Resources
             <!-- pilcrow sign -->
             <key code="23" output="‰"/>
             <!-- combining circumflex below -->
-            <key code="24" output="&#x0300;"/>
+            <key code="24" output="̀"/>
             <!-- combining grave -->
             <key code="25" output="}"/>
             <key code="26" output="\"/>
@@ -627,9 +614,9 @@ Resources
             <key code="27" output="¿"/>
             <!-- inverted question mark -->
             <key code="28" output="{"/>
-            <key code="29" output="&#x030b;"/>
+            <key code="29" output="̋"/>
             <!-- combining doubleacute -->
-            <key code="30" output="&#x0302;"/>
+            <key code="30" output="̂"/>
             <!-- combining circumflex -->
             <key code="31" output=""/>
             <!-- combining caron -->
@@ -641,7 +628,7 @@ Resources
             <!-- combining cedilla -->
             <key code="35" output="ﬂ"/>
             <!-- combining stroke -->
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <key code="37" output="Ñ"/>
             <key code="38" output=""/>
             <!-- combining ogonek -->
@@ -650,7 +637,7 @@ Resources
             <key code="40" output="‡"/>
             <!-- Thorn -->
             <key code="41" output="∑"/>
-            <key code="42" output="&#x022;"/>
+            <key code="42" output="&#x0022;"/>
             <!-- quote -->
             <key code="43" output="”"/>
             <!-- combining commabelow -->
@@ -668,7 +655,7 @@ Resources
             <!-- O diaeresis -->
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output="."/>
@@ -678,7 +665,7 @@ Resources
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <key code="71" output="&#x001b;"/>
+            <key code="71" output="&#x001B;"/>
             <key code="72" output="="/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
@@ -721,17 +708,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="5">
@@ -749,7 +736,7 @@ Resources
             <!-- bullet -->
             <key code="8" action="tildebelow"/>
             <key code="9" action="tilde"/>
-            <key code="10" output="'"/>
+            <key code="10" output="&#x0027;"/>
             <!-- apostrophe -->
             <key code="11" action="macronbelow"/>
             <key code="12" action="ringabove"/>
@@ -771,7 +758,7 @@ Resources
             <key code="22" output="§"/>
             <!-- section sign -->
             <key code="23" action="circumflexbelow"/>
-            <key code="24" output="&#x0301;"/>
+            <key code="24" output="́"/>
             <key code="25" output="]"/>
             <key code="26" output="|"/>
             <!-- vertical bar -->
@@ -779,13 +766,13 @@ Resources
             <!-- plus-minus sign -->
             <key code="28" output="["/>
             <key code="29" action="doubleacute"/>
-            <key code="30" output="&#x0308;"/>
+            <key code="30" output="̈"/>
             <key code="31" output=""/>
             <key code="32" action="dotbelow"/>
             <key code="33" output="≤"/>
             <key code="34" action="cedilla"/>
             <key code="35" action="stroke"/>
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <key code="37" output="‘"/>
             <key code="38" action="ogonek"/>
             <key code="39" output="–"/>
@@ -793,7 +780,7 @@ Resources
             <!-- Thorn -->
             <key code="41" output="SS"/>
             <!-- sharp s -->
-            <key code="42" output="'"/>
+            <key code="42" output="&#x0027;"/>
             <key code="43" action="commabelow"/>
             <key code="44" output="÷"/>
             <key code="45" output="›"/>
@@ -804,22 +791,22 @@ Resources
             <key code="50" output="Ö"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output=","/>
             <!-- decimal separator on numeric keypad -->
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -857,17 +844,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="6">
@@ -926,7 +913,7 @@ Resources
             <key code="34" action="cedilla"/>
             <key code="35" output="ł"/>
             <!-- l stroke -->
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000D;"/>
             <key code="37" output="‘"/>
             <key code="38" output="ħ"/>
             <!-- h stroke -->
@@ -936,7 +923,7 @@ Resources
             <!-- t stroke -->
             <key code="41" output="ß"/>
             <!-- sharp s -->
-            <key code="42" output="'"/>
+            <key code="42" output="&#x0027;"/>
             <key code="43" action="commabelow"/>
             <key code="44" output="÷"/>
             <key code="45" output="›"/>
@@ -948,22 +935,22 @@ Resources
             <key code="50" output="ö"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output="."/>
             <!-- decimal separator on numeric keypad -->
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -1001,34 +988,34 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
         <keyMap index="7">
             <!-- control -->
             <key code="0" output="&#x0001;"/>
-            <key code="1" output="&#x000f;"/>
+            <key code="1" output="&#x000F;"/>
             <key code="2" output="&#x0005;"/>
             <key code="3" output="&#x0015;"/>
             <key code="4" output="&#x0004;"/>
             <key code="5" output="&#x0009;"/>
-            <key code="6" output="'"/>
+            <key code="6" output="&#x0027;"/>
             <key code="7" output="&#x0011;"/>
-            <key code="8" output="&#x000a;"/>
-            <key code="9" output="&#x000b;"/>
+            <key code="8" output="&#x000A;"/>
+            <key code="9" output="&#x000B;"/>
             <key code="10" output="0"/>
             <key code="11" output="&#x0018;"/>
-            <key code="12" output="&#x001b;"/>
+            <key code="12" output="&#x001B;"/>
             <key code="13" output=","/>
             <key code="14" output="."/>
             <key code="15" output="&#x0010;"/>
@@ -1043,47 +1030,47 @@ Resources
             <key code="24" output="="/>
             <key code="25" output="9"/>
             <key code="26" output="7"/>
-            <key code="27" output="&#x001f;"/>
+            <key code="27" output="&#x001F;"/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <key code="30" output="&#x001d;"/>
+            <key code="30" output="&#x001D;"/>
             <key code="31" output="&#x0012;"/>
             <key code="32" output="&#x0007;"/>
             <key code="33" output="`"/>
             <key code="34" output="&#x0003;"/>
-            <key code="35" output="&#x000c;"/>
-            <key code="36" output="&#x000d;"/>
-            <key code="37" output="&#x000e;"/>
+            <key code="35" output="&#x000C;"/>
+            <key code="36" output="&#x000D;"/>
+            <key code="37" output="&#x000E;"/>
             <key code="38" output="&#x0008;"/>
             <key code="39" output="/"/>
             <key code="40" output="&#x0014;"/>
             <key code="41" output="&#x0013;"/>
-            <key code="42" output="&#x001c;"/>
+            <key code="42" output="&#x001C;"/>
             <key code="43" output="&#x0017;"/>
-            <key code="44" output="&#x001a;"/>
+            <key code="44" output="&#x001A;"/>
             <key code="45" output="&#x0002;"/>
-            <key code="46" output="&#x000d;"/>
+            <key code="46" output="&#x000D;"/>
             <key code="47" output="&#x0016;"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action=" "/>
             <key code="50" output=";"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
+            <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
             <key code="64" output="&#x0010;"/>
             <key code="65" output="."/>
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <key code="71" output="&#x001b;"/>
-            <key code="72" output="&#x001f;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
             <!-- gap, 73-74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="&#x001E;"/>
             <key code="78" output="-"/>
             <!-- gap, 79-80 -->
             <key code="79" output="&#x0010;"/>
@@ -1121,17 +1108,17 @@ Resources
             <key code="113" output="&#x0010;"/>
             <key code="114" output="&#x0005;"/>
             <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
             <key code="118" output="&#x0010;"/>
             <key code="119" output="&#x0004;"/>
             <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
+            <key code="121" output="&#x000C;"/>
             <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
             <!-- gap, 127 -->
         </keyMap>
     </keyMapSet>
@@ -1181,8 +1168,8 @@ Resources
         <action id="&#x0026;">
             <when state="none" output="&#x0026;"/>
         </action>
-        <action id="'">
-            <when state="none" output="'"/>
+        <action id="&#x0027;">
+            <when state="none" output="&#x0027;"/>
             <when state="specials" output="ʹ"/>
         </action>
         <action id="*">
