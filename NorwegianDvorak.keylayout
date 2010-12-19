@@ -6,7 +6,7 @@
   http://github.com/vibrog/no-dvorak
   Reuse and copying allowed when attribution given.
 -->
-<!--Last edited by Ukelele version 2.1.4 on 2010-12-19 at 23:35 (GMT+01:00)-->
+<!--Last edited by Ukelele version 2.1.4 on 2010-12-19 at 23:44 (GMT+01:00)-->
 <keyboard group="0" id="6951" name="Norwegian Dvorak" maxout="3">
     <layouts>
         <layout first="0" last="0" modifiers="commonModifiers" mapSet="ANSI"/>
@@ -467,7 +467,7 @@
             <key code="28" output="["/>
             <key code="29" output="≈"/>
             <key code="30" action="~"/>
-            <key code="31" output=""/>
+            <key code="31" output="®"/>
             <key code="32" output=""/>
             <key code="33" output="≤"/>
             <key code="34" output="ç"/>
@@ -485,7 +485,7 @@
             <key code="44" output="÷"/>
             <key code="45" output="›"/>
             <key code="46" output="‘"/>
-            <key code="47" output=""/>
+            <key code="47" output="½"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
             <key code="50" output="ö"/>
@@ -596,9 +596,9 @@
             <!-- combining breve -->
             <key code="18" output="¡"/>
             <!-- inverted exclamation mark -->
-            <key code="19" output="®"/>
+            <key code="19" output="²"/>
             <!-- registered sign -->
-            <key code="20" output="¥"/>
+            <key code="20" output="³"/>
             <!-- yen sign -->
             <key code="21" output="¢"/>
             <!-- cent sign -->
@@ -614,7 +614,7 @@
             <key code="27" output="¿"/>
             <!-- inverted question mark -->
             <key code="28" output="{"/>
-            <key code="29" output="̋"/>
+            <key code="29" output="≠"/>
             <!-- combining doubleacute -->
             <key code="30" output="̂"/>
             <!-- combining circumflex -->
