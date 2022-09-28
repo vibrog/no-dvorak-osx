@@ -31,12 +31,14 @@ old Keyboard Suitcase (resource file) keyboard layout format.
 ## Rearranging the keyboard
 
 Recent Apple keyboards are easy to rearrange: Lift each key from the
-left corner until it snaps, then slide it carefully to the right to
-free it from the holding mechanism. You'll need a thin tool to lift
-this up to attach the key in its new location. Once attached on the
-right, press until it clicks in. You don't need to move the A and M keys.
+bottom edge until it snaps, then slide it carefully upwards to free it
+from the holding mechanism. Reverse the operation to attach the key:
+Once attached on the top, press until it clicks in.
+You don't need to move the A and M keys.
 
-
+Note: Updated for keyboards found on M1/M2 MacBooks.
+Older Apple devices have the scissor mechanism rotated 90°, and must
+be lifted from the left edge.
 
 
 [1]: http://dvorak.tg90nor.net/
